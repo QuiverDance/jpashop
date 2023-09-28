@@ -12,12 +12,12 @@ public class MemberRepository {
     @PersistenceContext
     private EntityManager em;
 
-    public Long save(Member member){
-        em.persist(member);
-        return member.getId();
+    public Long save(MyMember myMember){
+        em.persist(myMember);
+        return myMember.getId();
     }
 
-    public Member find(Long id){
-        return em.find(Member.class, id);
+    public MyMember find(Long id){
+        return em.find(MyMember.class, id);
     }
 }
