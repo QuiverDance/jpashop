@@ -10,7 +10,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @SpringBootTest
 class MyMemberRepositoryTest {
 
-    @Autowired MemberRepository memberRepository;
+    @Autowired MyMemberRepository memberRepository;
 
     @Test
     @Transactional
