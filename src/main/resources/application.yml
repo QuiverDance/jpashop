@@ -13,6 +13,7 @@ spring: #띄어쓰기 없음
 #        show_sql: true
         format_sql: true
         default_batch_fetch_size: 100
+    open-in-view: true #osiv 설정 off 하면 -> 지연로딩을 transaction 내에서 모두 끝내야함 -> 기존 지연 로딩 코드를 service계층에 query를 담당하는 클래스를 만들어 다 넣고 controller에서 이를 호출함
 
 #logging.level: #띄어쓰기 없음
 #  org.hibernate.SQL: debug #띄어쓰기 2칸
